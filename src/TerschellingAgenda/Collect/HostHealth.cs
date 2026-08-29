@@ -40,12 +40,10 @@ public sealed class HostHealthStore
         public string? LastError { get; set; }
     }
 
-    public HostHealthStore(IWebHostEnvironment env, ILogger<HostHealthStore> log)
+    public HostHealthStore(IWebHostEnvironment env, IConfiguration config, ILogger<HostHealthStore> log)
     {
         _log = log;
-        var dir = Path.Combine(env.ContentRootPath, "..", "..", "data");
-        Directory.CreateDirectory(dir);
-        _path = Path.Combine(dir, "host-health.json");
+        _path = Path.Combine(DataPath.Resolve(env, config), "host-health.json");
         Load();
     }
 

@@ -146,7 +146,7 @@ public sealed class SourceCollector
             //    twintig detailpagina's kostten zo bijna een minuut per bron.
             if (detailLinks.Count > 0)
             {
-                var detailGate = new SemaphoreSlim(4, 4);
+                var detailGate = new SemaphoreSlim(Capacity.DetailPages, Capacity.DetailPages);
                 var detailTasks = detailLinks.Select(async link =>
                 {
                     await detailGate.WaitAsync(ct);
@@ -246,7 +246,17 @@ public sealed class SourceCollector
         var detailLinks = new List<string>();
 
         AngleSharp.Dom.IDocument doc;
-        try { doc = await _parser.ParseDocumentAsync(html, ct); }
+        try
+        {
+            // Een zeer grote pagina levert een ontleed document op van een veelvoud
+            // van die omvang. Bij tientallen pagina's tegelijk loopt een kleine
+            // container daarop vast; afkappen is beter dan omvallen. Agendagegevens
+            // staan vrijwel altijd in het eerste deel van de pagina.
+            int cap = Capacity.MaxResponseBytes;
+            if (html.Length > cap) html = html[..cap];
+
+            doc = await _parser.ParseDocumentAsync(html, ct);
+        }
         catch (Exception ex) { _log.LogDebug("Parsefout {Url}: {Msg}", url, ex.Message); return (raws, methods, detailLinks); }
 
         var jsonLd = JsonLdExtractor.Extract(doc, url);

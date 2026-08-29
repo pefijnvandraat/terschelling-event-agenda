@@ -33,7 +33,7 @@ public sealed class HttpFetcher : IDisposable
     /// </summary>
     private const int PerHostDelayMs = 400;
     private const int SearchHostDelayMs = 2600;
-    private const int MaxBytes = 4 * 1024 * 1024;
+    private static readonly int MaxBytes = Capacity.MaxResponseBytes;
 
     /// <summary>
     /// Wachttijd per poging. Een agendapagina die na acht seconden nog niets heeft

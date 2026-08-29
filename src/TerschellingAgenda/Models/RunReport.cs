@@ -63,6 +63,8 @@ public sealed class RunReport
     public List<string> SourcesFromArchive { get; set; } = new();
     /// <summary>Websites die zijn overgeslagen omdat ze niet reageerden — bespaart wachttijd.</summary>
     public List<string> SkippedHosts { get; set; } = new();
+    /// <summary>Hoeveel er tegelijk kon worden gedaan, gegeven het beschikbare geheugen.</summary>
+    public string Capacity { get; set; } = "";
     public bool BrowserAvailable { get; set; }
 
     public string Disclaimer { get; set; } =

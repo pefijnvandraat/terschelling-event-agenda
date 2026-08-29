@@ -93,7 +93,7 @@ public sealed class AggregationService
             // ---------- Fase 1: geregistreerde bronnen ----------
             Progress = $"Fase 1/3 — {sources.Count} geregistreerde bronnen raadplegen…";
             Tracker.Start(ProgressTracker.Sources, sources.Count);
-            var throttler = new SemaphoreSlim(12, 12);
+            var throttler = new SemaphoreSlim(Capacity.Sources, Capacity.Sources);
             var tasks = sources.Select(async src =>
             {
                 await throttler.WaitAsync(ct);
@@ -183,7 +183,7 @@ public sealed class AggregationService
 
                 Progress = $"Fase 3/3 — {ordered.Count} gevonden pagina's uitlezen…";
                 Tracker.Start(ProgressTracker.Pages, ordered.Count);
-                var pageGate = new SemaphoreSlim(12, 12);
+                var pageGate = new SemaphoreSlim(Capacity.Pages, Capacity.Pages);
                 var pageTasks = ordered.Select(async hit =>
                 {
                     await pageGate.WaitAsync(ct);
@@ -255,6 +255,7 @@ public sealed class AggregationService
 
             // Transparantie over de terugvalladder.
             report.BrowserAvailable = _resilient.BrowserAvailable;
+            report.Capacity = TerschellingAgenda.Capacity.Description;
             report.FetchStrategies = _resilient.Statistics.Snapshot();
             report.SourcesNeedingBrowser = report.SourceOutcomes
                 .Where(o => o.Strategies.Contains("Browser"))
@@ -356,10 +357,9 @@ public sealed class ResultStore
     public List<ActivityEvent> LastEvents { get; private set; } = new();
     public List<RunReport> History { get; private set; } = new();
 
-    public ResultStore(IWebHostEnvironment env)
+    public ResultStore(IWebHostEnvironment env, IConfiguration config)
     {
-        _dir = Path.Combine(env.ContentRootPath, "..", "..", "data");
-        Directory.CreateDirectory(_dir);
+        _dir = DataPath.Resolve(env, config);
         TryLoad();
     }
 
