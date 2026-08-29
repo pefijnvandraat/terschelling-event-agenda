@@ -1,0 +1,15 @@
+# Build-uitvoer
+bin/
+obj/
+
+# Resultaten van zoekopdrachten: worden bij elke run opnieuw geschreven.
+# Bevat ook host-health.json, dat per machine verschilt.
+/data/
+
+# Editors en besturingssysteem
+.vs/
+.vscode/
+*.user
+*.suo
+Thumbs.db
+desktop.ini

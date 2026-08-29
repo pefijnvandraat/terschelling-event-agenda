@@ -1,0 +1,825 @@
+{
+  "island": "Terschelling",
+  "municipality": "Gemeente Terschelling",
+  "province": "Fryslan",
+  "compiledAt": "2026-08-29T05:52:50.6858384Z",
+  "verificationSources": [
+    "https://nl.wikipedia.org/wiki/Terschelling",
+    "https://nl.wikipedia.org/wiki/Lijst_van_plaatsen_in_de_gemeente_Terschelling",
+    "https://www.plaatsengids.nl/terschelling",
+    "https://www.terschelling.nl/",
+    "https://www.vvvterschelling.nl/",
+    "https://bagviewer.kadaster.nl/",
+    "https://www.openstreetmap.org/relation/Terschelling"
+  ],
+  "places": [
+    {
+      "name": "West-Terschelling",
+      "type": "dorp",
+      "parent": null,
+      "variants": [
+        "West-Skylge",
+        "Westerschelling",
+        "West ter Schelling"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/West-Terschelling",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Midsland",
+      "type": "dorp",
+      "parent": null,
+      "variants": [
+        "Meslôns",
+        "Midslân",
+        "Meslânzers",
+        "Meslons"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Midsland",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Hoorn",
+      "type": "dorp",
+      "parent": null,
+      "variants": [
+        "Hôane",
+        "Hoarn",
+        "Hoorn (Terschelling)"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Hoorn_(Terschelling)",
+      "ambiguous": true,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Formerum",
+      "type": "dorp",
+      "parent": null,
+      "variants": [
+        "Femearum",
+        "Formearum"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Formerum",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Lies",
+      "type": "dorp",
+      "parent": null,
+      "variants": [
+        "Lies (Terschelling)"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Lies_(Terschelling)",
+      "ambiguous": true,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Oosterend",
+      "type": "dorp",
+      "parent": null,
+      "variants": [
+        "Aastrein",
+        "Aasterein",
+        "Oosterend (Terschelling)"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Oosterend_(Terschelling)",
+      "ambiguous": true,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Baaiduinen",
+      "type": "dorp",
+      "parent": null,
+      "variants": [
+        "Baaidunen"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Baaiduinen",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Landerum",
+      "type": "dorp",
+      "parent": null,
+      "variants": [
+        "Janderum"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Landerum",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Kinnum",
+      "type": "gehucht",
+      "parent": null,
+      "variants": [
+        "Kinum",
+        "Kinnem"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Kinnum",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Hee",
+      "type": "gehucht",
+      "parent": null,
+      "variants": [
+        "Hee (Terschelling)"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Hee_(Terschelling)",
+      "ambiguous": true,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Striep",
+      "type": "gehucht",
+      "parent": null,
+      "variants": [
+        "Stryp",
+        "Seerijp",
+        "Surijp",
+        "Suryp"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Striep",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Kaard",
+      "type": "gehucht",
+      "parent": null,
+      "variants": [
+        "Kaad",
+        "Kaerdt"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Kaard",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Dellewal",
+      "type": "buurtschap",
+      "parent": "West-Terschelling",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Dellewal",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Halfweg",
+      "type": "buurtschap",
+      "parent": "West-Terschelling",
+      "variants": [
+        "Halfweg (Terschelling)"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Halfweg_(Terschelling)",
+      "ambiguous": true,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Horp",
+      "type": "buurtschap",
+      "parent": "Kaard",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Horp",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Midsland aan Zee",
+      "type": "buurtschap",
+      "parent": "Midsland",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Midsland_aan_Zee",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Midsland-Noord",
+      "type": "buurtschap",
+      "parent": "Midsland",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Midsland-Noord",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "West aan Zee",
+      "type": "buurtschap",
+      "parent": "West-Terschelling",
+      "variants": [
+        "Paal 8",
+        "Peal Acht"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/West_aan_Zee",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Tjermelân",
+      "type": "buurtschap",
+      "parent": "Hoorn/Oosterend",
+      "variants": [
+        "Tjermêlân"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Tjermel%C3%A2n",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Formerum-Noord",
+      "type": "gehucht",
+      "parent": "Formerum",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Formerum",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Kathoek",
+      "type": "gehucht",
+      "parent": "Lies",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Lies_(Terschelling)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Noordhoek",
+      "type": "gehucht",
+      "parent": "Lies",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Lies_(Terschelling)",
+      "ambiguous": true,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "De Duunt",
+      "type": "gehucht",
+      "parent": "Lies",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Lies_(Terschelling)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Boschplaat",
+      "type": "natuurgebied",
+      "parent": "Oosterend/Hoorn (eastern Terschelling)",
+      "variants": [
+        "De Boschplaat",
+        "Bosplaat"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Boschplaat_(Terschelling)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Noordsvaarder",
+      "type": "natuurgebied",
+      "parent": "West-Terschelling (western tip)",
+      "variants": [
+        "Noordvaarder"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Noordsvaarder",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Kroonpolders",
+      "type": "natuurgebied",
+      "parent": "West-Terschelling",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Kroonpolders",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Griltjeplak",
+      "type": "natuurgebied",
+      "parent": "West-Terschelling",
+      "variants": [
+        "Griltjesplak"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Griltjeplak",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Landerumerheide",
+      "type": "natuurgebied",
+      "parent": "Midsland/Landerum",
+      "variants": [
+        "Landerummerheide"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Landerumerheide",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Koegelwieck",
+      "type": "natuurgebied",
+      "parent": "Formerum/Lies/Hoorn",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Koegelwieck_(natuurgebied)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Duinen Terschelling",
+      "type": "natuurgebied",
+      "parent": "Terschelling (island-wide)",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Duinen_Terschelling",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Terschellingerwad",
+      "type": "natuurgebied",
+      "parent": "south of Terschelling",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Terschellingerwad",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Berkenvallei",
+      "type": "natuurgebied",
+      "parent": "Boschplaat (western part)",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Boschplaat_(Terschelling)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Cupido's Polder",
+      "type": "natuurgebied",
+      "parent": "Boschplaat",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Boschplaat_(Terschelling)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "de Groede",
+      "type": "natuurgebied",
+      "parent": "Boschplaat",
+      "variants": [
+        "Groede"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Boschplaat_(Terschelling)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Waterplak",
+      "type": "natuurgebied",
+      "parent": "between Midsland aan Zee and West aan Zee",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Waterplak",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Meisterplak",
+      "type": "natuurgebied",
+      "parent": "near Midsland aan Zee",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Midsland_aan_Zee",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Liesingerplak",
+      "type": "natuurgebied",
+      "parent": "Koegelwieck (near Lies)",
+      "variants": [
+        "Liesterplak",
+        "Liesinger- of Liesterplak"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Koegelwieck_(natuurgebied)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Hoornermiede",
+      "type": "natuurgebied",
+      "parent": "Koegelwieck (near Hoorn)",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Koegelwieck_(natuurgebied)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Kooibosjes",
+      "type": "natuurgebied",
+      "parent": "Hee",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Hee_(Terschelling)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Duinmeertje van Hee",
+      "type": "natuurgebied",
+      "parent": "Hee",
+      "variants": [
+        "Meertje van Hee"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Duinmeertje_van_Hee",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Badhuiskuil",
+      "type": "natuurgebied",
+      "parent": "West aan Zee",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/West_aan_Zee",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Doodemanskisten",
+      "type": "natuurgebied",
+      "parent": "Terschelling (dunes)",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Terschelling",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Formerumer Wiel",
+      "type": "natuurgebied",
+      "parent": "Formerum",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Terschelling",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Ponswiel",
+      "type": "natuurgebied",
+      "parent": "Striep/Strieper Polder",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Striep",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Formerumerbos",
+      "type": "natuurgebied",
+      "parent": "Formerum",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Formerum",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Lergerbos",
+      "type": "natuurgebied",
+      "parent": "Lies/Hoorn (border)",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Lies_(Terschelling)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Strieper Polder",
+      "type": "natuurgebied",
+      "parent": "Striep",
+      "variants": [
+        "Het Nieuwland"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Striep",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Strieperkerkhof",
+      "type": "landmark",
+      "parent": "Striep (SW of Midsland)",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Striep",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Studentenplak",
+      "type": "natuurgebied",
+      "parent": "Terschelling (central-west)",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Terschelling",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Kaapsduin",
+      "type": "natuurgebied",
+      "parent": "West-Terschelling",
+      "variants": [
+        "Kaapsduin (West-Terschelling)"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Kaapsduin_(West-Terschelling)",
+      "ambiguous": true,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Seinpaalduin",
+      "type": "natuurgebied",
+      "parent": "West-Terschelling",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Seinpaalduin",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Arjensduin",
+      "type": "natuurgebied",
+      "parent": "Hee",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Arjensduin",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Parapluduin",
+      "type": "natuurgebied",
+      "parent": "Boschplaat",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Boschplaat_(Terschelling)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Griend",
+      "type": "natuurgebied",
+      "parent": "Gemeente Terschelling (Waddenzee)",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Griend_(zandplaat)",
+      "ambiguous": false,
+      "useAsSearchTerm": false
+    },
+    {
+      "name": "Engelschhoek",
+      "type": "natuurgebied",
+      "parent": "west of Terschelling",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Engelschhoek",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Paal 8",
+      "type": "strand",
+      "parent": "West aan Zee",
+      "variants": [
+        "Strandpaal 8",
+        "Peal Acht",
+        "West aan Zee"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/West_aan_Zee",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Haven van West-Terschelling",
+      "type": "landmark",
+      "parent": "West-Terschelling",
+      "variants": [
+        "Jachthaven",
+        "Veerhaven"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Terschelling",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Brandaris",
+      "type": "landmark",
+      "parent": "West-Terschelling",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Brandaris_(vuurtoren)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Westerkerk",
+      "type": "venue",
+      "parent": "West-Terschelling",
+      "variants": [
+        "Westerkerk West-Terschelling"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Westerkerk_(West-Terschelling)",
+      "ambiguous": true,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Sint-Janskerk",
+      "type": "venue",
+      "parent": "Hoorn",
+      "variants": [
+        "Sint-Janskerk Hoorn",
+        "Janskerk Hoorn"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Sint-Janskerk_(Hoorn)",
+      "ambiguous": true,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Hervormde kerk Midsland",
+      "type": "venue",
+      "parent": "Midsland",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Hervormde_kerk_(Midsland)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Het Wakend Oog",
+      "type": "venue",
+      "parent": "West-Terschelling haven",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Het_Wakend_Oog",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Koffiemolen",
+      "type": "venue",
+      "parent": "Formerum",
+      "variants": [
+        "Formerumermolen",
+        "De Koffiemolen"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Koffiemolen_(Formerum)",
+      "ambiguous": true,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Stryper Wyfke",
+      "type": "landmark",
+      "parent": "Striep/Midsland (main road)",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Stryper_Wyfke",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Derk Hoekstra Stuifdijk",
+      "type": "landmark",
+      "parent": "Boschplaat",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Boschplaat_(Terschelling)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Drenkelingenhuisje",
+      "type": "landmark",
+      "parent": "Terschelling (location unconfirmed)",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Terschelling",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Noordkaap",
+      "type": "landmark",
+      "parent": "Boschplaat (eastern tip)",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Noordkaap_(scheepsbaken)",
+      "ambiguous": true,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Museum 't Behouden Huys",
+      "type": "venue",
+      "parent": "West-Terschelling",
+      "variants": [
+        "Behouden Huys",
+        "Schellinger Museum"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Museum_%27t_Behouden_Huys",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Bunker Museum Terschelling",
+      "type": "venue",
+      "parent": "Dellewal (near West-Terschelling)",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Bunker_Museum_Terschelling",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Wrakkenmuseum",
+      "type": "venue",
+      "parent": "Formerum",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Wrakkenmuseum",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "West-End Theater",
+      "type": "venue",
+      "parent": "West-Terschelling",
+      "variants": [
+        "West End Theater",
+        "West-End Theatre"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/West-End_Theater",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Café De Stoep",
+      "type": "venue",
+      "parent": "Midsland",
+      "variants": [
+        "De Stoep"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Oerol_Festival",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Heartbreak Hotel",
+      "type": "venue",
+      "parent": "Oosterend",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Oosterend_(Terschelling)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Strandpaviljoen Oosterend",
+      "type": "venue",
+      "parent": "Oosterend",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Oosterend_(Terschelling)",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Maritiem Instituut Willem Barentsz",
+      "type": "venue",
+      "parent": "West-Terschelling",
+      "variants": [
+        "MIWB",
+        "Willem Barentsz",
+        "NHL Stenden Terschelling"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Maritiem_Instituut_Willem_Barentsz",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Camping Appelhof",
+      "type": "venue",
+      "parent": "Formerum",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Formerum",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Stayokay Terschelling",
+      "type": "venue",
+      "parent": "Dellewal",
+      "variants": [],
+      "source": "https://nl.wikipedia.org/wiki/Dellewal",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Hotel Paal 8",
+      "type": "venue",
+      "parent": "West aan Zee",
+      "variants": [
+        "Hotel West aan Zee"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/West_aan_Zee",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    },
+    {
+      "name": "Oerol",
+      "type": "evenement",
+      "parent": "Geheel Terschelling (juni)",
+      "variants": [
+        "Oerol Festival"
+      ],
+      "source": "https://nl.wikipedia.org/wiki/Oerol_Festival",
+      "ambiguous": false,
+      "useAsSearchTerm": true
+    }
+  ]
+}

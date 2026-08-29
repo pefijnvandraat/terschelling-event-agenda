@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wat is er te doen op Terschelling?</title>
+<meta name="description" content="Zo compleet mogelijk overzicht van activiteiten en evenementen op Terschelling, verzameld uit openbare bronnen.">
+<link rel="stylesheet" href="styles.css?v=3">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏝️</text></svg>">
+</head>
+<body>
+
+<a class="skip-link" href="#resultaten">Naar de resultaten</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">🏝️</span>
+      <div>
+        <h1>Wat is er te doen op Terschelling?</h1>
+        <p class="tagline">Zo compleet mogelijk overzicht op basis van de geraadpleegde openbare bronnen.</p>
+      </div>
+    </div>
+    <button id="themeToggle" class="icon-btn" type="button" aria-label="Wissel donker/licht thema" title="Donker of licht thema">
+      <span aria-hidden="true">◐</span>
+    </button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ------------------------------------------------ zoekbalk -->
+  <section class="panel search-panel" aria-labelledby="zoekTitel">
+    <h2 id="zoekTitel" class="visually-hidden">Zoeken</h2>
+
+    <div class="date-row">
+      <div class="field">
+        <label for="fromDate">Van datum</label>
+        <input type="date" id="fromDate">
+      </div>
+      <div class="field">
+        <label for="toDate">Tot datum</label>
+        <input type="date" id="toDate">
+      </div>
+      <div class="field field-grow">
+        <label for="quickRange">Snelkeuze</label>
+        <select id="quickRange">
+          <option value="">Kies een periode…</option>
+          <option value="today">Vandaag</option>
+          <option value="tomorrow">Morgen</option>
+          <option value="weekend">Komend weekend</option>
+          <option value="7">Komende 7 dagen</option>
+          <option value="14" selected>Komende 14 dagen</option>
+          <option value="30">Komende 30 dagen</option>
+          <option value="90">Komende 3 maanden</option>
+        </select>
+      </div>
+      <div class="field field-action">
+        <button id="searchBtn" class="btn btn-primary" type="button">
+          <span class="btn-label">Zoeken op internet</span>
+        </button>
+      </div>
+    </div>
+
+    <details class="advanced">
+      <summary>Zoekinstellingen</summary>
+      <div class="advanced-body">
+        <label class="check">
+          <input type="checkbox" id="deepSearch" checked>
+          <span>Brede zoekmachine-ontdekking (zoekt per dorp, buurtschap en gehucht — trager, maar completer)</span>
+        </label>
+        <label class="check">
+          <input type="checkbox" id="useBrowser" checked>
+          <span><strong>Echte browser gebruiken</strong> voor sites die JavaScript vereisen of eenvoudige
+            verzoeken weigeren. Ontsluit agenda's die anders onzichtbaar blijven.</span>
+        </label>
+        <label class="check">
+          <input type="checkbox" id="useArchive" checked>
+          <span><strong>Webarchief als laatste redmiddel</strong> voor onbereikbare sites. Deze gegevens
+            worden altijd gemarkeerd als “Onzeker”, omdat een momentopname verouderd kan zijn.</span>
+        </label>
+        <div class="field">
+          <label for="maxQueries">Maximaal aantal zoekopdrachten: <output id="maxQueriesOut">90</output></label>
+          <input type="range" id="maxQueries" min="12" max="260" step="2" value="90">
+        </div>
+        <div class="field">
+          <label for="maxPages">Maximaal aantal gevonden pagina's uitlezen: <output id="maxPagesOut">120</output></label>
+          <input type="range" id="maxPages" min="20" max="400" step="10" value="120">
+        </div>
+        <p class="hint">Een brede zoekopdracht duurt doorgaans 1–4 minuten. De resultaten worden bewaard,
+          zodat filteren daarna direct werkt.</p>
+      </div>
+    </details>
+
+    <div id="progress" class="progress" hidden>
+      <div class="progress-head">
+        <strong id="progressText">Bezig met zoeken…</strong>
+        <span class="progress-total" id="progressPercent">0%</span>
+      </div>
+      <div class="bar bar-total" role="progressbar" aria-labelledby="progressText"
+           aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressBar">
+        <div class="bar-fill" id="progressFill"></div>
+      </div>
+      <ol class="steps" id="progressSteps"></ol>
+      <p class="hint" id="progressHint">Bronnen worden parallel geraadpleegd. Een bron die niet reageert, wordt overgeslagen.</p>
+    </div>
+
+    <div id="alert" class="alert" hidden role="alert"></div>
+  </section>
+
+  <!-- ------------------------------------------------ filters -->
+  <section class="panel filter-panel" aria-labelledby="filterTitel">
+    <h2 id="filterTitel" class="panel-title">Filters</h2>
+    <div class="filter-grid">
+      <div class="field">
+        <label for="qFilter">Zoekwoord</label>
+        <input type="search" id="qFilter" placeholder="bijv. concert, wadlopen, Brandaris">
+      </div>
+      <div class="field">
+        <label for="villageFilter">Dorp / plaats</label>
+        <select id="villageFilter"><option value="*">Alle plaatsen</option></select>
+      </div>
+      <div class="field">
+        <label for="categoryFilter">Categorie</label>
+        <select id="categoryFilter"><option value="*">Alle categorieën</option></select>
+      </div>
+      <div class="field">
+        <label for="priceFilter">Gratis / betaald</label>
+        <select id="priceFilter">
+          <option value="*">Alles</option>
+          <option value="gratis">Gratis</option>
+          <option value="betaald">Betaald</option>
+          <option value="onbekend">Prijs onbekend</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="confidenceFilter">Betrouwbaarheid</label>
+        <select id="confidenceFilter">
+          <option value="*">Alles</option>
+          <option value="Bevestigd">Alleen bevestigd</option>
+          <option value="Bevestigd,Onzeker">Bevestigd + onzeker</option>
+          <option value="Onzeker">Alleen onzeker</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="reservationFilter">Reserveren</label>
+        <select id="reservationFilter">
+          <option value="*">Alles</option>
+          <option value="Ja">Reserveren nodig</option>
+          <option value="Nee">Reserveren niet nodig</option>
+          <option value="Onbekend">Onbekend</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="sortSelect">Sorteren</label>
+        <select id="sortSelect">
+          <option value="datum">Datum en starttijd</option>
+          <option value="naam">Naam</option>
+          <option value="dorp">Dorp / plaats</option>
+          <option value="betrouwbaarheid">Betrouwbaarheid</option>
+        </select>
+      </div>
+      <div class="field field-action">
+        <button id="resetBtn" class="btn btn-ghost" type="button">Filters wissen</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------ resultaten -->
+  <section id="resultaten" aria-labelledby="resTitel">
+    <div class="results-head">
+      <h2 id="resTitel"><span id="resultCount">0</span> activiteiten</h2>
+      <div class="view-toggle" role="group" aria-label="Weergave kiezen">
+        <button type="button" class="toggle-btn is-active" data-view="cards" aria-pressed="true">Kaartweergave</button>
+        <button type="button" class="toggle-btn" data-view="list" aria-pressed="false">Lijstweergave</button>
+      </div>
+    </div>
+
+    <p id="rangeLabel" class="range-label"></p>
+
+    <div id="results" class="results cards" aria-live="polite"></div>
+
+    <div id="emptyState" class="empty" hidden>
+      <p class="empty-title">Geen activiteiten gevonden voor deze selectie.</p>
+      <p>Dit betekent niet automatisch dat er niets te doen is. Probeer een ruimere periode,
+         zet de brede zoekmachine-ontdekking aan, of wis de filters.</p>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------ transparantie -->
+  <section class="panel transparency" aria-labelledby="transTitel">
+    <h2 id="transTitel" class="panel-title">Transparantie van deze zoekopdracht</h2>
+    <div id="transparency" class="transparency-body">
+      <p class="hint">Nog geen zoekopdracht uitgevoerd in deze sessie.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Zo compleet mogelijk overzicht op basis van de geraadpleegde openbare bronnen.</strong>
+       Er kan niet worden gegarandeerd dat álle activiteiten op Terschelling zijn gevonden.</p>
+    <p class="hint">Gegevens die niet in een bron staan, worden weergegeven als “Onbekend”. Er wordt nooit
+       informatie aangevuld of geschat. Controleer belangrijke details altijd bij de organisator.</p>
+  </div>
+</footer>
+
+<!-- detailvenster -->
+<dialog id="detailDialog" class="detail-dialog" aria-labelledby="detailTitle">
+  <div class="detail-inner">
+    <button class="dialog-close icon-btn" type="button" aria-label="Sluiten">✕</button>
+    <div id="detailContent"></div>
+  </div>
+</dialog>
+
+<script src="app.js?v=3"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+{
+  "_comment": "Handmatig toegevoegde bronnen die tijdens het testen via zoekmachines zijn gevonden en geverifieerd. Zelfde schema als de research-batches.",
+  "sources": [
+    {
+      "name": "Natuurvereniging Terschelling — Agenda",
+      "homepage": "https://www.natuurverenigingterschelling.nl",
+      "agendaUrl": "https://www.natuurverenigingterschelling.nl/agenda",
+      "category": "nature organisation",
+      "tier": "primary_organizer",
+      "hasJsonLd": false,
+      "rendering": "server",
+      "blocked": false,
+      "notes": "Lokale natuurvereniging met eigen excursie- en lezingenagenda."
+    },
+    {
+      "name": "WBE Terschelling — Agenda",
+      "homepage": "https://www.wbe-terschelling.nl",
+      "agendaUrl": "https://www.wbe-terschelling.nl/agenda.php",
+      "category": "local association",
+      "tier": "primary_organizer",
+      "hasJsonLd": false,
+      "rendering": "server",
+      "blocked": false,
+      "notes": "Wildbeheereenheid Terschelling, publiceert eigen activiteiten."
+    },
+    {
+      "name": "Uitgaan Terschelling",
+      "homepage": "https://uitgaanterschelling.nl",
+      "agendaUrl": "https://uitgaanterschelling.nl/",
+      "category": "event calendar",
+      "tier": "tourist_calendar",
+      "hasJsonLd": false,
+      "rendering": "server",
+      "blocked": false,
+      "notes": "Eilandbrede uitgaansagenda."
+    },
+    {
+      "name": "Terschelling.site — Evenementen",
+      "homepage": "https://terschelling.site",
+      "agendaUrl": "https://terschelling.site/evenementen/",
+      "category": "event calendar",
+      "tier": "tourist_calendar",
+      "hasJsonLd": false,
+      "rendering": "server",
+      "blocked": false,
+      "notes": "Toeristische eilandsite met evenementenoverzicht."
+    },
+    {
+      "name": "Dagjeweg.nl — Kalender Terschelling",
+      "homepage": "https://www.dagjeweg.nl",
+      "agendaUrl": "https://www.dagjeweg.nl/kalender/terschelling",
+      "category": "aggregator",
+      "tier": "aggregator",
+      "hasJsonLd": false,
+      "rendering": "server",
+      "blocked": false,
+      "notes": "Landelijke uitagenda met Terschelling-pagina."
+    },
+    {
+      "name": "Hotel-Restaurant De Rustende Jager — Agenda",
+      "homepage": "https://www.rustendejager.com",
+      "agendaUrl": "https://www.rustendejager.com/agenda/",
+      "category": "horeca",
+      "tier": "official_venue",
+      "hasJsonLd": false,
+      "rendering": "server",
+      "blocked": false,
+      "defaultVillage": "Midsland",
+      "notes": "Horecagelegenheid met eigen agenda."
+    },
+    {
+      "name": "uitagenda.nl — Baaiduinen",
+      "homepage": "https://www.uitagenda.nl",
+      "agendaUrl": "https://www.uitagenda.nl/baaiduinen",
+      "category": "aggregator",
+      "tier": "aggregator",
+      "hasJsonLd": true,
+      "rendering": "server",
+      "blocked": false,
+      "defaultVillage": "Baaiduinen",
+      "notes": "Per-dorp pagina — test voor activiteiten die alleen een lokale plaatsnaam noemen."
+    },
+    {
+      "name": "uitagenda.nl — Landerum",
+      "homepage": "https://www.uitagenda.nl",
+      "agendaUrl": "https://www.uitagenda.nl/landerum",
+      "category": "aggregator",
+      "tier": "aggregator",
+      "hasJsonLd": true,
+      "rendering": "server",
+      "blocked": false,
+      "defaultVillage": "Landerum",
+      "notes": "Per-dorp pagina."
+    },
+    {
+      "name": "uitagenda.nl — Hee",
+      "homepage": "https://www.uitagenda.nl",
+      "agendaUrl": "https://www.uitagenda.nl/hee",
+      "category": "aggregator",
+      "tier": "aggregator",
+      "hasJsonLd": true,
+      "rendering": "server",
+      "blocked": false,
+      "defaultVillage": "Hee",
+      "notes": "Per-dorp pagina."
+    },
+    {
+      "name": "uitagenda.nl — Kinnum",
+      "homepage": "https://www.uitagenda.nl",
+      "agendaUrl": "https://www.uitagenda.nl/kinnum",
+      "category": "aggregator",
+      "tier": "aggregator",
+      "hasJsonLd": true,
+      "rendering": "server",
+      "blocked": false,
+      "defaultVillage": "Kinnum",
+      "notes": "Per-dorp pagina."
+    },
+    {
+      "name": "uitagenda.nl — Striep",
+      "homepage": "https://www.uitagenda.nl",
+      "agendaUrl": "https://www.uitagenda.nl/striep",
+      "category": "aggregator",
+      "tier": "aggregator",
+      "hasJsonLd": true,
+      "rendering": "server",
+      "blocked": false,
+      "defaultVillage": "Striep",
+      "notes": "Per-dorp pagina."
+    },
+    {
+      "name": "uitagenda.nl — Halfweg (Terschelling)",
+      "homepage": "https://www.uitagenda.nl",
+      "agendaUrl": "https://www.uitagenda.nl/halfweg-terschelling",
+      "category": "aggregator",
+      "tier": "aggregator",
+      "hasJsonLd": true,
+      "rendering": "server",
+      "blocked": false,
+      "defaultVillage": "Halfweg",
+      "notes": "Per-dorp pagina."
+    },
+    {
+      "name": "Museum 't Behouden Huys",
+      "homepage": "https://www.behouden-huys.nl",
+      "agendaUrl": "https://www.behouden-huys.nl/agenda",
+      "category": "museum",
+      "tier": "official_venue",
+      "hasJsonLd": false,
+      "rendering": "server",
+      "blocked": false,
+      "defaultVillage": "West-Terschelling",
+      "notes": "Cultuurhistorisch museum van Terschelling."
+    },
+    {
+      "name": "Centrum voor Natuur en Landschap (CNL)",
+      "homepage": "https://www.cnlterschelling.nl",
+      "agendaUrl": "https://www.cnlterschelling.nl/agenda",
+      "category": "museum",
+      "tier": "official_venue",
+      "hasJsonLd": false,
+      "rendering": "server",
+      "blocked": false,
+      "defaultVillage": "West-Terschelling",
+      "notes": "Natuurmuseum met eigen excursieprogramma."
+    },
+    {
+      "name": "Oerol Festival — agenda",
+      "homepage": "https://oerol.nl",
+      "agendaUrl": "https://oerol.nl/nl/programma",
+      "category": "festival",
+      "tier": "primary_organizer",
+      "hasJsonLd": true,
+      "rendering": "server",
+      "blocked": false,
+      "notes": "Grootste festival van het eiland (juni)."
+    }
+  ]
+}
